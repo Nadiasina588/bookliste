@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/fontawesome/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/fontawesome/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-primary"></i>My<span class="text-primary">Book</span>List
+        </h1>
+       
+     <form id="book-form" class="col-md-4">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title">
+        </div>
+        <div class="form-group">
+            <label for="author">Auteur</label>
+            <input type="text" class="form-control" id="author">
+        </div>
+        <div class="form-group">
+
+            <label for="list">ISBN</label>
+            <input type="number" class="form-control" id="isbn">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success btn-sm btn-block" type="submit">Add Book<i class="fa fa-check"></i></button>
+        </div>
+    
+    </form>
+    </div>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>List</th>
+                    <th>ID</th>
+                </tr>
+                
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
